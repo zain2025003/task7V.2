@@ -26,7 +26,7 @@ class DetailesScreen extends StatelessWidget {
               DetailesScreenCustomVideoDescription(),
               DetailesScreenCustomUserInformation(),
               DetailesScreenCustomFeedback()
-              //ttttrrreerrrr43e4
+              //ttttrrreerrrr43e4www
             ],
           ),
         ),
