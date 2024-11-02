@@ -187,4 +187,17 @@ class AppSizes {
       Responsive.responsiveHeight * 37.6;
   static double aviliableScreenTimerButtonRadius =
       Responsive.responsiveHeight * 7.22;
+
+  static double aviliableTimeScreenDataEntryCustomTextOneLeftPadding =
+      Responsive.responsiveWidth * 15.42;
+  static double aviliableTimeScreenDataEntryCustomTextOneTopPadding =
+      Responsive.responsiveHeight * 21.05;
+  static double aviliableTimeScreenDataEntryCustomTextOneFontSize =
+      Responsive.responsiveWidth * 12.33;
+  static double aviliableTimeScreenDataEntryTextFieldOneTopPadding =
+      Responsive.responsiveHeight * 2.68;
+  static double aviliableScreenDataEntryTextFiledLeftPadding =
+      Responsive.responsiveWidth * 15.63;
+  static double aviliableTimeScreenDataEntryTextFieldRightPadding =
+      Responsive.responsiveWidth * 15.63;
 }
