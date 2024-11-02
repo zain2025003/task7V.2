@@ -208,4 +208,6 @@ class AppSizes {
       Responsive.responsiveHeight * 13.75;
   static double aviliableTimeScreenDataEntryCustomTextTwoFontSize =
       Responsive.responsiveWidth * 12.33;
+  static double aviliableTimeScreenDataEntryCustomTextThreeTopPadding =
+      Responsive.responsiveHeight * 13.48;
 }

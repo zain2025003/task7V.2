@@ -86,11 +86,14 @@ class AviliableScreenDataEntry extends StatelessWidget {
           ),
         ),
         CustomText(
-            leftPadding: Responsive.responsiveWidth * 15.42,
+            leftPadding:
+                AppSizes.aviliableTimeScreenDataEntryCustomTextOneLeftPadding,
             fontWeight: AppTextStyles.fontWeight_w600,
-            topPadding: Responsive.responsiveHeight * 13.48,
+            topPadding:
+                AppSizes.aviliableTimeScreenDataEntryCustomTextThreeTopPadding,
             text: 'Schedule date & time',
-            fontSize: Responsive.responsiveWidth * 12.33,
+            fontSize:
+                AppSizes.aviliableTimeScreenDataEntryCustomTextOneFontSize,
             textColor: const Color(0xff303030)),
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -122,6 +125,27 @@ class AviliableScreenDataEntry extends StatelessWidget {
                 textColor: const Color(0xff9D9FA0)),
           ],
         ),
+        Padding(
+          padding: EdgeInsets.only(
+              top: Responsive.responsiveHeight * 33.88,
+              left: Responsive.responsiveWidth * 16.65,
+              right: Responsive.responsiveWidth * 14.3),
+          child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  fixedSize: Size(Responsive.responsiveWidth * 309,
+                      Responsive.responsiveWidth * 51),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                          Responsive.responsiveHeight * 7.22)),
+                  backgroundColor: const Color(0xffFF8500)),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text(
+                'Apply',
+                style: TextStyle(color: Color(0xffFFFFFF)),
+              )),
+        )
       ],
     );
   }
