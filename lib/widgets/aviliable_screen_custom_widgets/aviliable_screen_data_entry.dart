@@ -35,39 +35,54 @@ class AviliableScreenDataEntry extends StatelessWidget {
           child: TextFormField(
             decoration: InputDecoration(
                 disabledBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Color(0xffEEEEEE)),
-                    borderRadius: BorderRadius.all(
-                        Radius.circular(Responsive.responsiveHeight * 5.41))),
+                    borderSide: BorderSide(
+                        color: AppColors
+                            .aviliableTimeScreenDataEntryTextFieldBorderColor),
+                    borderRadius: BorderRadius.all(Radius.circular(
+                        AppSizes.aviliableTimeScreenDataEntryTextFieldRadius))),
                 enabled: false,
                 filled: true,
-                fillColor: const Color(0xffEEEEEE),
+                fillColor:
+                    AppColors.aviliableTimeScreenDataEntryTextFieldFillColor,
                 hintText: 'samuel_herickson@gmail.com',
-                hintStyle: const TextStyle(color: Color(0xffC7C9D9))),
+                hintStyle: TextStyle(
+                    fontWeight: AppTextStyles.fontWeight_w400,
+                    color: AppColors
+                        .aviliableTimeScreenDataEntryTextFieldHintTextColor)),
           ),
         ),
         CustomText(
-            leftPadding: Responsive.responsiveWidth * 15.42,
+            leftPadding:
+                AppSizes.aviliableTimeScreenDataEntryCustomTextTwoLeftPadding,
             fontWeight: AppTextStyles.fontWeight_w600,
-            topPadding: Responsive.responsiveHeight * 13.75,
+            topPadding:
+                AppSizes.aviliableTimeScreenDataEntryCustomTextTwoTopPadding,
             text: 'Telp number',
-            fontSize: Responsive.responsiveWidth * 12.33,
-            textColor: const Color(0xff303030)),
+            fontSize:
+                AppSizes.aviliableTimeScreenDataEntryCustomTextTwoFontSize,
+            textColor: AppColors.aviliableTimeScreenDataEntryCustomTextColor),
         Padding(
           padding: EdgeInsets.only(
               top: Responsive.responsiveHeight * 2.68,
-              left: Responsive.responsiveWidth * 15.63,
-              right: Responsive.responsiveWidth * 15.63),
+              left: AppSizes.aviliableScreenDataEntryTextFiledLeftPadding,
+              right:
+                  AppSizes.aviliableTimeScreenDataEntryTextFieldRightPadding),
           child: TextFormField(
             decoration: InputDecoration(
                 disabledBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Color(0xffEEEEEE)),
-                    borderRadius: BorderRadius.all(
-                        Radius.circular(Responsive.responsiveHeight * 5.41))),
+                    borderSide: BorderSide(
+                        color: AppColors
+                            .aviliableTimeScreenDataEntryTextFieldBorderColor),
+                    borderRadius: BorderRadius.all(Radius.circular(
+                        AppSizes.aviliableTimeScreenDataEntryTextFieldRadius))),
                 enabled: false,
                 filled: true,
-                fillColor: const Color(0xffEEEEEE),
+                fillColor:
+                    AppColors.aviliableTimeScreenDataEntryTextFieldFillColor,
                 hintText: '(001) 34 4567890',
-                hintStyle: const TextStyle(color: Color(0xffC7C9D9))),
+                hintStyle: TextStyle(
+                    color: AppColors
+                        .aviliableTimeScreenDataEntryTextFieldHintTextColor)),
           ),
         ),
         CustomText(
