@@ -6,5 +6,5 @@ class AppIcons {
       'assets/icons/stopWatchIcon.svg';
   static String aviliableTimeChckBoxIcon = 'assets/icons/checkBoxIcon.svg';
   static String aviliableTimeChckIcon = 'assets/icons/check.svg';
-  String x = 'sasad';
+  static String z = 'ds';
 }
