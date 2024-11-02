@@ -116,4 +116,75 @@ class AppSizes {
 
   static double detailesScreenAvatarWidth = Responsive.responsiveWidth * 36.09;
   static double detailesScreenAvatarHeight = Responsive.responsiveWidth * 36.09;
+
+  static double detailesAvatarButtonPaddingHorizantal =
+      Responsive.responsiveWidth * 10.5;
+  static double detailesAvatarButtonPaddingVertical =
+      Responsive.responsiveHeight * 3.03;
+  static double detailesScreenFeedBackContainerWidth =
+      Responsive.responsiveWidth * 337;
+  static double doubleScreenFeedBackContainerHeight =
+      Responsive.responsiveHeight * 81.7;
+  static double detailesScreenCardLeftPadding = Responsive.responsiveHeight * 9;
+  static double detailesScreenFeedBackContainerTopMargin =
+      Responsive.responsiveHeight * 17.6;
+
+  static double detailescreenFeebBackTitleFontSize =
+      Responsive.responsiveWidth * 13;
+  static double detailescreenFeebBackSubTitleFontSize =
+      Responsive.responsiveWidth * 13;
+
+  //
+  static double detailesScreenFollowClassRightPostioned =
+      Responsive.responsiveWidth * 14;
+
+  static double detailesScreenFollowClassTopPostioned =
+      Responsive.responsiveHeight * 670;
+
+  static double detailesScreenFollowClassLeftPostioned =
+      Responsive.responsiveWidth * 17;
+  static double detailesScreenFollowClassFixedSizeWidth =
+      Responsive.responsiveWidth * 309;
+  static double detailesScreenFollowClassFixedSizeHeight =
+      Responsive.responsiveHeight * 50;
+  static double detailesScreenFollowClassRadius =
+      Responsive.responsiveHeight * 7;
+  static double detailesScreenFollowClassTextFontSize =
+      Responsive.responsiveWidth * 14.44;
+  //
+
+  static double aviliableSceenHeaderTopPaddingHeaderTextOne =
+      Responsive.responsiveHeight * 22.23;
+  static double aviliableScreenHeaderLeftPaddingTextTwo =
+      Responsive.responsiveWidth * 14.46;
+  static double aviliableScreenHeaderTextOneFontSize =
+      Responsive.responsiveWidth * 16.24;
+  static double aviliableScreenHeaderTextTwoTopPadding =
+      Responsive.responsiveHeight * 2.78;
+  static double aviliableScreenHeaderTextTwoLeftPadding =
+      Responsive.responsiveWidth * 14.39;
+
+  static double aviliableScreenHeaderCelenderContainerWidth =
+      Responsive.responsiveWidth * 38.93;
+  static double aviliableScreenHeaderCelenderContainerHeight =
+      Responsive.responsiveHeight * 38.93;
+  static double aviliableScreenHeaderCelenderContainerTopMargin =
+      Responsive.responsiveHeight * 26.61;
+  static double aviliableScreenHeaderCelenderContainerLeftMargin =
+      Responsive.responsiveWidth * 100.45;
+  static double aviliableScreenHeaderCelenderContainerRadius =
+      Responsive.responsiveHeight * 7.22;
+
+  static double aviliableTimeScreenTimerButtonTopPadding =
+      Responsive.responsiveHeight * 27.91;
+  static double aviliableScreenTimerButtonLeftPadding =
+      Responsive.responsiveWidth * 14.63;
+  static double aviliableScreenTimerButtonRightPadding =
+      Responsive.responsiveWidth * 16.99;
+  static double aviliableScreenTimerButtonWidth =
+      Responsive.responsiveWidth * 81.4;
+  static double aviliableScreenTimerButtonHeight =
+      Responsive.responsiveHeight * 37.6;
+  static double aviliableScreenTimerButtonRadius =
+      Responsive.responsiveHeight * 7.22;
 }

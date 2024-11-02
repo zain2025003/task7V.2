@@ -3,7 +3,6 @@ import 'package:task7_v2/core/classes/constants/app_colors.dart';
 import 'dart:ui';
 import 'package:task7_v2/core/classes/constants/app_images.dart';
 import 'package:task7_v2/core/classes/constants/app_sizes.dart';
-import 'package:task7_v2/core/classes/constants/services/media_query_services.dart';
 
 class DetailesScreenCustomVideoUserInterFace extends StatelessWidget {
   const DetailesScreenCustomVideoUserInterFace({super.key});

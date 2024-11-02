@@ -10,7 +10,8 @@ class CustomSvg extends StatelessWidget {
       this.topPadding,
       this.letfPadding,
       this.rightPadding,
-      this.bottomPadding});
+      this.bottomPadding,
+      this.color});
   final String pictureLink;
   final double pictureWidth;
   final double pictureHeight;
@@ -18,18 +19,22 @@ class CustomSvg extends StatelessWidget {
   final double? letfPadding;
   final double? rightPadding;
   final double? bottomPadding;
+  final Color? color;
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: EdgeInsets.only(
-            top: topPadding ?? 0,
-            left: letfPadding ?? 0,
-            right: rightPadding ?? 0,
-            bottom: bottomPadding ?? 0),
-        child: SvgPicture.asset(
-          pictureLink,
-          width: pictureWidth,
-          height: pictureHeight,
-        ));
+      padding: EdgeInsets.only(
+          top: topPadding ?? 0,
+          left: letfPadding ?? 0,
+          right: rightPadding ?? 0,
+          bottom: bottomPadding ?? 0),
+      child: SvgPicture.asset(
+        pictureLink,
+        width: pictureWidth,
+        height: pictureHeight,
+        // ignore: deprecated_member_use
+        color: color,
+      ),
+    );
   }
 }
