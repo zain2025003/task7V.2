@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task7_v2/core/classes/constants/app_colors.dart';
 import 'package:task7_v2/core/classes/constants/app_icons.dart';
 import 'package:task7_v2/core/classes/constants/app_sizes.dart';
 import 'package:task7_v2/core/classes/constants/app_text_styles.dart';
@@ -22,8 +23,9 @@ class AviliableScreenDataEntry extends StatelessWidget {
             topPadding:
                 AppSizes.aviliableTimeScreenDataEntryCustomTextOneTopPadding,
             text: 'Email',
-            fontSize: Responsive.responsiveWidth * 12.33,
-            textColor: const Color(0xff303030)),
+            fontSize:
+                AppSizes.aviliableTimeScreenDataEntryCustomTextOneFontSize,
+            textColor: AppColors.aviliableTimeScreenDataEntryCustomTextColor),
         Padding(
           padding: EdgeInsets.only(
               top: Responsive.responsiveHeight * 2.68,

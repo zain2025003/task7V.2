@@ -41,5 +41,7 @@ class AppColors {
       const Color(0xFFFF8500);
   static Color aviliaableScreenTimerButtonWhenDisableColor =
       const Color(0xffFFFFFF);
+  static Color aviliableTimeScreenDataEntryCustomTextColor =
+      const Color(0xff303030);
   //home screen colors
 }
