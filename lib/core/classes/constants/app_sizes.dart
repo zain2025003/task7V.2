@@ -200,4 +200,12 @@ class AppSizes {
       Responsive.responsiveWidth * 15.63;
   static double aviliableTimeScreenDataEntryTextFieldRightPadding =
       Responsive.responsiveWidth * 15.63;
+  static double aviliableTimeScreenDataEntryTextFieldRadius =
+      Responsive.responsiveHeight * 5.41;
+  static double aviliableTimeScreenDataEntryCustomTextTwoLeftPadding =
+      Responsive.responsiveWidth * 15.42;
+  static double aviliableTimeScreenDataEntryCustomTextTwoTopPadding =
+      Responsive.responsiveHeight * 13.75;
+  static double aviliableTimeScreenDataEntryCustomTextTwoFontSize =
+      Responsive.responsiveWidth * 12.33;
 }

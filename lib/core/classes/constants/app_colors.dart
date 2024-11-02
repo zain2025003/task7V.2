@@ -43,5 +43,11 @@ class AppColors {
       const Color(0xffFFFFFF);
   static Color aviliableTimeScreenDataEntryCustomTextColor =
       const Color(0xff303030);
+  static Color aviliableTimeScreenDataEntryTextFieldBorderColor =
+      const Color(0xffEEEEEE);
+  static Color aviliableTimeScreenDataEntryTextFieldFillColor =
+      const Color(0xffEEEEEE);
+  static Color aviliableTimeScreenDataEntryTextFieldHintTextColor =
+      const Color(0xffC7C9D9);
   //home screen colors
 }
