@@ -4,4 +4,5 @@ class AppIcons {
   static String notificationIcon = 'assets/icons/notificationsIcon.svg';
   static String detailesScreenStopWatchIconLink =
       'assets/icons/stopWatchIcon.svg';
+  static String z = 'd';
 }
