@@ -31,24 +31,43 @@ class DetailesScreenCustomUserInformation extends StatelessWidget {
         ],
       ),
       ListTile(
-          leading: Image(
-            image: AssetImage(AppImages.detailesScreenAvatar),
-            width: AppSizes.detailesScreenAvatarWidth,
-            height: AppSizes.detailesScreenAvatarHeight,
+        leading: Image(
+          image: AssetImage(AppImages.detailesScreenAvatar),
+          width: AppSizes.detailesScreenAvatarWidth,
+          height: AppSizes.detailesScreenAvatarHeight,
+        ),
+        title: Text(
+          'Laurel Seilha',
+          style: TextStyle(
+            fontWeight: AppTextStyles.fontWeight_w600,
           ),
-          title: Text(
-            'Laurel Seilha',
-            style: TextStyle(
-              fontWeight: AppTextStyles.fontWeight_w600,
-            ),
+        ),
+        subtitle: Text(
+          'Product Designer',
+          style: TextStyle(
+            fontSize: Responsive.responsiveWidth * 9.02,
+            fontWeight: AppTextStyles.fontWeight_w400,
           ),
-          subtitle: Text(
-            'Product Designer',
+        ),
+        trailing: Container(
+          padding: EdgeInsetsDirectional.symmetric(
+              horizontal: AppSizes.detailesAvatarButtonPaddingHorizantal,
+              vertical: AppSizes.detailesAvatarButtonPaddingVertical),
+          decoration: BoxDecoration(
+            borderRadius:
+                BorderRadius.circular(Responsive.responsiveHeight * 18.04),
+            color: AppColors.detailesScreenAvatarButtonColor,
+          ),
+          child: Text(
+            'Free e-book',
             style: TextStyle(
-              fontSize: Responsive.responsiveWidth * 9.02,
-              fontWeight: AppTextStyles.fontWeight_w400,
-            ),
-          ))
+                fontFamily: AppTextStyles.primeryFontFamily,
+                fontWeight: AppTextStyles.fontWeight_w400,
+                color: Colors.white,
+                fontSize: Responsive.responsiveWidth * 9),
+          ),
+        ),
+      )
     ]);
   }
 }

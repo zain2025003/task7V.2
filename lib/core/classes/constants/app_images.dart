@@ -4,6 +4,6 @@ class AppImages {
   static String detailesScreenPlayVideoCover =
       'assets/images/playVideoCover.png';
   static String detailesScreenAvatar = 'assets/images/detailesScreenAvatar.png';
-  static String detailesScreenCardBacground =
+  static String detailesScreenCardBackground =
       'assets/images/cardLeadingBacground.png';
 }
