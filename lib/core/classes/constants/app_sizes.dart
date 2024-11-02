@@ -187,4 +187,9 @@ class AppSizes {
       Responsive.responsiveHeight * 37.6;
   static double aviliableScreenTimerButtonRadius =
       Responsive.responsiveHeight * 7.22;
+
+  static double aviliableTimeScreenDataEntryCustomTextOneLeftPadding =
+      Responsive.responsiveWidth * 15.42;
+  static double aviliableTimeScreenDataEntryCustomTextOneTopPadding =
+      Responsive.responsiveHeight * 21.05;
 }

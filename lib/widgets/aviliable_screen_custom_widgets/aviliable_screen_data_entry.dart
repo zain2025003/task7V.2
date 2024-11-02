@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task7_v2/core/classes/constants/app_icons.dart';
+import 'package:task7_v2/core/classes/constants/app_sizes.dart';
 import 'package:task7_v2/core/classes/constants/app_text_styles.dart';
 import 'package:task7_v2/core/classes/constants/services/media_query_services.dart';
 import 'package:task7_v2/widgets/public_custom_widgets/custom_svg.dart';
@@ -15,9 +16,11 @@ class AviliableScreenDataEntry extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CustomText(
-            leftPadding: Responsive.responsiveWidth * 15.42,
+            leftPadding:
+                AppSizes.aviliableTimeScreenDataEntryCustomTextOneLeftPadding,
             fontWeight: AppTextStyles.fontWeight_w600,
-            topPadding: Responsive.responsiveHeight * 21.05,
+            topPadding:
+                AppSizes.aviliableTimeScreenDataEntryCustomTextOneTopPadding,
             text: 'Email',
             fontSize: Responsive.responsiveWidth * 12.33,
             textColor: const Color(0xff303030)),
