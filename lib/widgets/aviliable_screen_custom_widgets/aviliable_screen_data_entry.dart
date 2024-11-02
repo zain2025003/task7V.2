@@ -28,9 +28,10 @@ class AviliableScreenDataEntry extends StatelessWidget {
             textColor: AppColors.aviliableTimeScreenDataEntryCustomTextColor),
         Padding(
           padding: EdgeInsets.only(
-              top: Responsive.responsiveHeight * 2.68,
-              left: Responsive.responsiveWidth * 15.63,
-              right: Responsive.responsiveWidth * 15.63),
+              top: AppSizes.aviliableTimeScreenDataEntryTextFieldOneTopPadding,
+              left: AppSizes.aviliableScreenDataEntryTextFiledLeftPadding,
+              right:
+                  AppSizes.aviliableTimeScreenDataEntryTextFieldRightPadding),
           child: TextFormField(
             decoration: InputDecoration(
                 disabledBorder: OutlineInputBorder(
