@@ -79,7 +79,7 @@ class AviliableScreenDataEntry extends StatelessWidget {
                 filled: true,
                 fillColor:
                     AppColors.aviliableTimeScreenDataEntryTextFieldFillColor,
-                hintText: '(001) 34 4567890',
+                hintText: '(001) 34 4567890 ', //hint text
                 hintStyle: TextStyle(
                     color: AppColors
                         .aviliableTimeScreenDataEntryTextFieldHintTextColor)),
