@@ -16,7 +16,7 @@ class CourseApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
       title: 'Cousre App',
-      home: const DetailesScreen(),
+      home: const OnBoarding(),
     );
   }
 }//test32333333243
