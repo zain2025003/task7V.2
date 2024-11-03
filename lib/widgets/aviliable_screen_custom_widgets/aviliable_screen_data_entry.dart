@@ -17,7 +17,10 @@ class AviliableScreenDataEntry extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CustomText(
-            leftPadding:
+            leftPadding://Responsive.responsieWidth*200
+            //Responsive.responsiveHeight*200
+            //Responsive.responsiveWdth*12
+            
                 AppSizes.aviliableTimeScreenDataEntryCustomTextOneLeftPadding,
             fontWeight: AppTextStyles.fontWeight_w600,
             topPadding:
