@@ -3,6 +3,7 @@ import 'package:task7_v2/core/classes/constants/app_colors.dart';
 import 'package:task7_v2/core/classes/constants/app_icons.dart';
 import 'package:task7_v2/core/classes/constants/app_sizes.dart';
 import 'package:task7_v2/core/classes/constants/app_text_styles.dart';
+import 'package:task7_v2/view/screens/chat_page/chat_page.dart';
 import 'package:task7_v2/widgets/public_custom_widgets/custom_svg.dart';
 import 'package:task7_v2/widgets/public_custom_widgets/custom_text.dart';
 
@@ -13,21 +14,27 @@ class DetailesScreenCustomHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
-          margin: EdgeInsets.only(
-              left: AppSizes.detailesNavigationButtonLeftPadding,
-              top: AppSizes.detailesNavigationButtonTopPadding),
-          width: AppSizes.detailesNavigationButtonWidth,
-          height: AppSizes.detailesNavigationButtonWidth,
-          decoration: BoxDecoration(
-              color: AppColors.detailesNavigationButtonColor,
-              borderRadius: BorderRadius.circular(
-                  AppSizes.detailesNavigationButtonRedius)),
-          child: Center(
-            child: CustomSvg(
-                pictureLink: AppIcons.detailesNavigationButtonIconLink,
-                pictureWidth: AppSizes.detailesNavigationButtonIconWidth,
-                pictureHeight: AppSizes.detailesNavigationButtonIconHeight),
+        InkWell(
+          onTap: () {
+            Navigator.pushReplacement(
+                context, MaterialPageRoute(builder: (context) => ChatsPage()));
+          },
+          child: Container(
+            margin: EdgeInsets.only(
+                left: AppSizes.detailesNavigationButtonLeftPadding,
+                top: AppSizes.detailesNavigationButtonTopPadding),
+            width: AppSizes.detailesNavigationButtonWidth,
+            height: AppSizes.detailesNavigationButtonWidth,
+            decoration: BoxDecoration(
+                color: AppColors.detailesNavigationButtonColor,
+                borderRadius: BorderRadius.circular(
+                    AppSizes.detailesNavigationButtonRedius)),
+            child: Center(
+              child: CustomSvg(
+                  pictureLink: AppIcons.detailesNavigationButtonIconLink,
+                  pictureWidth: AppSizes.detailesNavigationButtonIconWidth,
+                  pictureHeight: AppSizes.detailesNavigationButtonIconHeight),
+            ),
           ),
         ),
         CustomText(

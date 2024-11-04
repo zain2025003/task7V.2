@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:task7_v2/core/classes/constants/services/media_query_services.dart';
-import 'package:task7_v2/view/screens/detailes_screen/detailes_screen.dart';
+import 'package:task7_v2/view/screens/onboarding_screen/onboarding_screen.dart';
 
 void main() {
-  runApp(const CourseApp());
+  runApp(MyApp());
 }
 
-class CourseApp extends StatelessWidget {
-  const CourseApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     Responsive.responsive(context);
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(useMaterial3: true),
-      title: 'Cousre App',
-      home: const OnBoarding(),
+      home: OnboardingScreen(),
     );
   }
-}//test32333333243
+}
