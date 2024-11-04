@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:task7_v2/core/classes/constants/services/media_query_services.dart';
 import 'package:task7_v2/view/screens/chat_page/chat_page.dart';
 import 'package:task7_v2/view/screens/rejister_screen/rejister_screen.dart';
@@ -23,12 +24,11 @@ class _LoginScreenState extends State<LoginScreen> {
     });
   }
 
-  void _validateInputs() {
-    // تعريف نمط البريد الإلكتروني للتحقق من صحته
+  void _validateInputs() async {
+    SharedPreferences preferences = await SharedPreferences.getInstance();
     final emailPattern = RegExp(r'^[^@]+@[^@]+\.[^@]+');
 
     if (_emailController.text.isEmpty || _passwordController.text.isEmpty) {
-      // التحقق من أن جميع الحقول غير فارغة
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
@@ -43,7 +43,6 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       );
     } else if (!emailPattern.hasMatch(_emailController.text)) {
-      // التحقق من أن البريد الإلكتروني بصيغة صحيحة
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
@@ -58,6 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       );
     } else {
+      preferences.setBool('isLogin', true);
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => ChatsPage()));
     }

@@ -126,15 +126,15 @@ class CustomBottomNavigationBar extends StatelessWidget {
                         maxHeight: 16.h, // تقليل الارتفاع الأقصى
                       ),
                       decoration: BoxDecoration(
-                        color: Colors.red, // لون الشارة
+                        color: Colors.red,
                         shape: BoxShape.circle,
                       ),
                       child: Center(
                         child: Text(
-                          '2', // عدد الرسائل
+                          '2',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 10.sp, // تقليل حجم النص
+                            fontSize: 10.sp,
                           ),
                         ),
                       ),

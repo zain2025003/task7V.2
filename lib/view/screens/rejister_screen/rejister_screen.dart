@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:task7_v2/core/classes/constants/services/media_query_services.dart';
 import 'package:task7_v2/view/screens/chat_page/chat_page.dart';
 import 'package:task7_v2/view/screens/login_screen/login_screen.dart';
@@ -20,7 +21,8 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
 
   bool _obscurePassword = true;
 
-  void _checkInputs(BuildContext context) {
+  void _checkInputs(BuildContext context) async {
+    SharedPreferences preferences = await SharedPreferences.getInstance();
     if (fullnameController.text.isEmpty ||
         emailController.text.isEmpty ||
         passwordController.text.isEmpty) {
@@ -28,6 +30,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
         const SnackBar(content: Text("Please fill in all fields")),
       );
     } else {
+      preferences.setBool('isRegister', true);
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (contect) => ChatsPage()));
       ScaffoldMessenger.of(context).showSnackBar(
@@ -131,9 +134,9 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                       suffixIcon: IconButton(
                         icon: Icon(
                           _obscurePassword
-                              ? Icons.visibility
-                              : Icons.visibility_off,
-                          color: Color(0xff9D9FA0),
+                              ? Icons.visibility_off
+                              : Icons.visibility,
+                          color: const Color(0xff9D9FA0),
                         ),
                         onPressed: () {
                           setState(() {
